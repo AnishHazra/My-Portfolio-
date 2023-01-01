@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/0236c0733e.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front End Developer</p>
+          <h1>Hi, I'm <span>Anish</span><br />Hazra From India</h1>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------about---------------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user1.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Recusandae eaque earum debitis ipsa distinctio! Consequatur
+              officiis reiciendis minus. Necessitatibus, numquam dignissimos.
+              Sed corrupti repudiandae rerum, iure expedita esse quod mollitia?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quam libero error adipisci tenetur vitae itaque ducimus inventore, esse voluptatem fuga asperiores voluptates cupiditate blanditiis, possimus dolorum rem dolores dignissimos.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skiils">
+              <ul>
+                <li><span>Web Development</span><br />Html CSS JavaScript</li>
+                <li><span>Programing</span><br />Python</li>
+                <li><span>Linux</span><br />Linux operator</li>
+                <li><span>YouTube</span><br />YouTuber</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li><span>2021-2022</span><br />Web Developer</li>
+                <li><span>2019-2020</span><br />Python</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li><span>2020</span><br />10th class from GBSSS</li>
+                <li><span>2021</span><br />11th class from GBSSS</li>
+                <li><span>2022</span><br />12th class from GBSSS</li>
+                <li><span>2026</span><br />BTech IT from IPU ADGITM</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------services-------------------------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum amet fugiat nulla vitae facilis placeat magni quisquam, nihil doloribus necessitatibus quo deserunt veniam alias fugit possimus assumenda! Architecto, recusandae facere?</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-python"></i>
+            <h2>Programer</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum amet fugiat nulla vitae facilis placeat magni quisquam, nihil doloribus necessitatibus quo deserunt veniam alias fugit possimus assumenda! Architecto, recusandae facere?</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-youtube"></i>
+            <h2>YouTuber</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum amet fugiat nulla vitae facilis placeat magni quisquam, nihil doloribus necessitatibus quo deserunt veniam alias fugit possimus assumenda! Architecto, recusandae facere?</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------portfolio------------------------------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <h2>You can check my YouTube videos :<a href="https://www.youtube.com/@koder2022">https://www.youtube.com/@koder2022</a></h2>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!--------------------------contact---------------------------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-sharp fa-solid fa-paper-plane"></i>anishhazra108@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>9711934105</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/http.anish/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@koder2022/home"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.linkedin.com/in/anish-hazra-667396176/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="text" name="email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &#169; Anish. Made with by Eazy Tutorials</p>
+      </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right =  "0";
+      }
+      function closemenu(){
+        sidemenu.style.right =  "-200px";
+      }
+
+
+    </script>
+  </body>
+</html>
